@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #bbbbbb;
+    padding: 20px 5px;    
+}
+
+.box {
+    background-color: #555555;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    display: flex;
+    color:#ffff;
+    transition: transform 1s;
+}
+
+b {
+    margin: auto;
+    transform: skew(-30deg);
+}
+
+.box:hover {
+    transform: scale(2) translate(100px,50px) skew(30deg);
+}

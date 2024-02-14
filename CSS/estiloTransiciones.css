@@ -1,0 +1,88 @@
+
+.container {
+    background-color: lightgrey;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 20px;
+    transition-property: left;
+    transition-duration: 1s;
+    position:relative;
+    left: 0;
+
+}
+
+/* Cuando pongamos el mouse en el contenedor me cambie el estilo de un hijo del contenedor*/
+
+.container:hover > .box {
+    left: 80%;
+}
+
+.box:hover {
+    background-color: black;
+    left: 80%;
+}
+
+.box:first-child {
+    transition-timing-function: linear;
+    background-color: lightgreen;
+}
+
+.box:nth-child(2) {
+    transition-timing-function: ease;
+    background-color: lightblue;
+}
+
+.box:nth-child(3) {
+    transition-timing-function: ease-in;
+    background-color: lightcoral;
+}
+
+.box:nth-child(4) {
+    transition-timing-function: ease-out;
+    background-color: blue
+}
+
+.box:last-child {
+    transition-timing-function: ease-in-out;
+    background-color: lightgoldenrodyellow;
+}
+
+/* PARTE DE ANIMACIONES*/
+
+.container-animacion {
+    background-color: #777;
+    
+}
+
+.box-animacion {
+    height: 100px;
+    width: 100px;
+    background-color: yellow
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    animation-name: example, desplazarse;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+
+@keyframes example {
+    0%   {background-color: red; left: 0;}
+    25%  {background-color: yellow; left: 25%;}
+    50%  {background-color: blue; left: 50%;}
+    75%  {background-color: green; left: 75%;}
+    100% {background-color: red; left: 100%;}
+}
+
+@keyframes desplazarse {
+0%   {left: 0;}
+100% {left: 80%;}
+}

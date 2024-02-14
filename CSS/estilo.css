@@ -1,0 +1,51 @@
+/*
+
+* {
+    color : red;
+}
+
+h2 {
+    color : green;
+}
+
+.color-red {
+    color : blue;
+}
+
+.color-red{
+    color : yellow;
+}
+
+[atributoRancio = "atributo-color-blue"] {
+    color : rgb(135, 136, 99);
+}
+
+#id-color-green {
+    color : green !important;
+}
+
+
+h2 {
+    color : black !important;
+}
+
+.form__input {
+    color: black;
+}
+
+.form__input-especial {
+    color: gold;
+}
+/*
+.contact-form {
+    font-size: 25px;
+    background-color: rgb(135, 20, 212);
+    width: 50vw;
+    height: 20vh;
+}
+
+.contact-form__p-h2 {
+    font-size: 1em;
+    font-family: Rubik Broken Fax, Arial;
+}
+*/
