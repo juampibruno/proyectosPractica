@@ -1,0 +1,16 @@
+.contenedor-1 {
+    background-color: red;
+    padding: 20px;
+}
+
+.contenedor-2 {
+    background-color: blue;
+    padding: 20px;
+}
+
+.input {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+    color: #444;
+}

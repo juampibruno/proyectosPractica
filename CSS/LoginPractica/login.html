@@ -14,15 +14,27 @@
 
 </head>
 <body>
-    <div class="contenedor">
-        <div class="login">
-            <h2 class = "plus-jakarta">Iniciar Sesión</h2>
-            <form action="">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <input type="submit" value="Iniciar Sesión">
-            </form>
-            <a href="recuperoContra.html">¿Olvidaste tu contraseña?</a>
-        </div>
+    <div class="contenedor-flex">
+
+            <div class = "contenedor-form">
+                <h2 class = "plus-jakarta">Iniciar Sesión</h2>
+                <form action="" class="form">
+                    <label for="usuario" class = "form__label">Usuario</label>
+                    <br>
+                    <input type="text" placeholder="Usuario" class = "form__input">
+                    <br>
+                    <label for="contraseña" class = "form__label">Contraseña</label>
+                    <br>
+                    <input type="password" placeholder="***" class = "form__input">
+                    <input type="submit" value="Iniciar Sesión" class = "form__button">
+                </form>
+                <a href="recuperoContra.html">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <div class = "form-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/115/115757.png" alt="Correo electronico">
+            </div>
+
+    </div>
 </body>
 </html>

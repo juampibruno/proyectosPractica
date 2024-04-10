@@ -29,3 +29,76 @@ body{
   font-style: normal;
   font-size: 32px;
 }
+
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #444;
+    margin: 100px 40px;
+    flex-direction: row;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+
+}
+
+.form {
+    min-width: 400px;
+    flex:1;
+    text-align: left;
+}
+
+.form__input {
+    width: 100%;
+    height: 32px;
+}
+
+.form__button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(92, 143, 15);
+    color: black;
+  /* Darle esquinas redondeadas */
+  border-radius: 10px;
+  /* Establecer el color del borde */
+  border: 4px solid #000;
+  /* Cambia el estilo del cursor*/
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.form-img {
+    flex:1;
+    text-align: left;
+
+}
+
+.form-img img {
+    width: 200px;
+    object-fit: cover;
+
+}
+
+label {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/*
+Si hacemos cuentas debido a que el body tenemos 
+*/

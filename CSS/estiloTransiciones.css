@@ -35,6 +35,7 @@
 .box:nth-child(2) {
     transition-timing-function: ease;
     background-color: lightblue;
+    
 }
 
 .box:nth-child(3) {
