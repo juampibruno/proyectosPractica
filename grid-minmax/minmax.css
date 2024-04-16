@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eeeeee;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header p {
+	font-size: 50px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	border:10px solid #000;
+	margin: auto;
+	font-size: 50px;
+	text-align: center;
+}
+
+.contenedor > div {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 2px 2px 2px 10px rgba(0,0,0,.4);
+    background-color: lightblue;
+}
+
+/* Grid */
+
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(300px,1fr) 1fr;
+    
+}

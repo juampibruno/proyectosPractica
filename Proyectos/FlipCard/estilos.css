@@ -8,9 +8,10 @@ body {
     --bg-color: color-mix(in srgb, #f62 90%, #fff);
     --card-color: #fff;
     --card-bg-color: #fff5;
-    --dark-color: #f62;
+    --dark-color: #b78f38;
     --text-color: #444;
-    background-color: var(--bg-color);
+    background: rgb(254,254,254);
+    background: radial-gradient(circle, rgba(254,254,254,1) 0%, rgba(119,167,215,1) 100%);
     font-family: 'Poppins', sans-serif;
     display: flex;
 }
@@ -60,6 +61,7 @@ body {
 
 .card__worker {
     max-height: 200px;
+    width: 300px;
     overflow: hidden;
     display: block;
 }
@@ -74,8 +76,13 @@ body {
 
 .card__data span {
     font-size: 1.5rem;
+    text-shadow: 1px 1px 1px lightblue;;
     margin: 6px 0;
     display: block;
+}
+
+.card__data p {
+    padding-top: 15px;
 }
 
 .card__back span {
@@ -86,14 +93,14 @@ body {
 }
 
 .skill-bar {
-    border: 4px solid var(--bg-color);
+    border: 4px solid var(--dark-color);
     margin: 12px;
     padding: 4px;
     border-radius: 10px;
 }
 
 .skill-bar div {
-    background-color: var(--bg-color);
+    background-color: var(--dark-color);
     padding: 9px;
     color:var(--card-color) ;
 }
@@ -112,11 +119,16 @@ body {
 }
 
 .skill-bar:nth-child(5) div {
-    width: 70%;
+    width: 100%;
 
 }
 
 .skill-bar:last-child div {
-    width: 100%;
+    width: 60%;
 }
 
+@media screen and (max-width: 630px) {
+    body {
+        flex-direction: column;
+    }
+}
