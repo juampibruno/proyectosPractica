@@ -56,15 +56,13 @@ footer {
 }
 
 /* Estilos para tabletas */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (min-width: 769px) and (max-width: 1200px) {
+    
 }
 
-
-/* Estilos para los elementos dentro del contenedor */
-.item {
-    padding: 20px;
-    text-align: center;
+/* Estilos para pantallas grandes */
+@media (min-width: 1201px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
